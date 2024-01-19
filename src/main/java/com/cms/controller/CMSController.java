@@ -25,7 +25,8 @@ public class CMSController {
 
 	@Autowired
 	CustomerDAO dao;
-	
+
+	// For Inserting
 	@PostMapping("/PerformInsert")
 	public String performInsert(@RequestBody Customer cus) {
 		dao.save(cus);
