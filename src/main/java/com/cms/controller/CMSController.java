@@ -47,7 +47,7 @@ public class CMSController {
     @GetMapping("/ViewAll")
     public List<Customer> viewAllCustomer(){
         Iterator<Customer> it=dao.findAll().iterator();
-         List<Customer> list = new ArrayList<Customer>();
+         List<Customer> list = new ArrayList<>();
             while (it.hasNext()) {
                 list.add(it.next());
             }

@@ -21,7 +21,6 @@ public class Customer {
 	private String cLoc;
 	public Customer() {
 		super();
-		// TODO Aputo-generated constructor stub
 	}
 	public Customer(int cId, String cName, String cEmail, int cNum, String cLoc) {
 		super();
