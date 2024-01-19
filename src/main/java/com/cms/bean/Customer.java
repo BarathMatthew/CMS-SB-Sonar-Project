@@ -19,7 +19,6 @@ public class Customer {
 	private int cNum;
 	@Column(name="cLoc")
 	private String cLoc;
-	// private String temp;
 	public Customer() {
 		super();
 	}
@@ -68,7 +67,4 @@ public class Customer {
 		return "Customer [cId=" + cId + ", cName=" + cName + ", cEmail=" + cEmail + ", cNum=" + cNum + ", cLoc=" + cLoc
 				+ "]";
 	}
-// void check(){
-// 	System.out.println("Success");
-// }
 }
