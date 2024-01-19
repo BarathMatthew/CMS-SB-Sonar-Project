@@ -19,6 +19,7 @@ public class Customer {
 	private int cNum;
 	@Column(name="cLoc")
 	private String cLoc;
+	private String temp;
 	public Customer() {
 		super();
 	}
