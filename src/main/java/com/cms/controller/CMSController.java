@@ -25,25 +25,29 @@ public class CMSController {
 
 	@Autowired
 	CustomerDAO dao;
-	
+
+	// For Inserting
 	@PostMapping("/PerformInsert")
 	public String performInsert(@RequestBody Customer cus) {
 		dao.save(cus);
 		return "Inserted";
 	}
-	
+
+	// For Updateing
 	@PutMapping("/PerformUpdate")
     public String performUpdate(@RequestBody Customer cus)
     {
 		dao.save(cus);
         return "Updated";
     }
+	
+// For Deleting
     @DeleteMapping("/PerformDelete/{cId}")
     public String performDelete(@PathVariable("cId") int cId) {
         dao.deleteById(cId);
         return "Deleted";
     }
-    
+    // For ViewAll
     @GetMapping("/ViewAll")
     public List<Customer> viewAllCustomer(){
         Iterator<Customer> it=dao.findAll().iterator();
