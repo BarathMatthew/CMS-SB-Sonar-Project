@@ -67,5 +67,7 @@ public class Customer {
 		return "Customer [cId=" + cId + ", cName=" + cName + ", cEmail=" + cEmail + ", cNum=" + cNum + ", cLoc=" + cLoc
 				+ "]";
 	}
-	
+// void check(){
+// 	System.out.println("Success");
+// }
 }
